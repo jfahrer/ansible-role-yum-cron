@@ -1,7 +1,7 @@
-Role Name
+yum-cron
 =========
 
-This roles installs and configures postfix to relay all mail to another smtp server.
+This roles installs and configures yum-cron
 
 Requirements
 ------------
@@ -24,9 +24,9 @@ Example Playbook
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
 ```yaml
-    - hosts: servers
-      roles:
-        - jfahrer.postfix-local-relay
+- hosts: servers
+  roles:
+    - jfahrer.yum-cron
 ```
 
 License
