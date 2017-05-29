@@ -1,0 +1,7 @@
+yum_cron_email_host: localhost
+yum_cron_email_from: root@localhost
+yum_cron_email_to: root
+yum_cron_apply_updates: no
+yum_cron_download_updates: yes
+yum_cron_update_messages: yes
+yum_cron_update_cmd: default

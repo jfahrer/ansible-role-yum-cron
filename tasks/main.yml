@@ -1,0 +1,19 @@
+---
+- name: 'Install yum-cron'
+  yum: 
+    name: yum-cron
+    state: present
+
+- name: 'Configure yum-cron'
+  template: 
+    src: yum-cron.conf.j2
+    dest: /etc/yum/yum-cron.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: 'Enable yum-cron'
+  service:
+    name: yum-cron.service
+    state: started
+    enabled: yes
